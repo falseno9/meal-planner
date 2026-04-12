@@ -1,0 +1,32 @@
+[
+  {
+    "id": "veggie",
+    "name": "Veggie",
+    "enabled": true,
+    "sortOrder": 1
+  },
+  {
+    "id": "pulse",
+    "name": "Pulse",
+    "enabled": true,
+    "sortOrder": 2
+  },
+  {
+    "id": "fun-item",
+    "name": "Fun Item",
+    "enabled": true,
+    "sortOrder": 3
+  },
+  {
+    "id": "rice",
+    "name": "Rice",
+    "enabled": true,
+    "sortOrder": 4
+  },
+  {
+    "id": "gravy",
+    "name": "Gravy",
+    "enabled": true,
+    "sortOrder": 5
+  }
+]

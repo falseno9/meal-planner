@@ -1,0 +1,577 @@
+[
+  {
+    "id": "bhindi-okra",
+    "name": "Bhindi (okra)",
+    "categoryId": "veggie",
+    "enabled": true,
+    "tags": [
+      "okra"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:00:00.000Z",
+    "updatedAt": "2026-04-12T21:00:00.000Z"
+  },
+  {
+    "id": "methi",
+    "name": "Methi",
+    "categoryId": "veggie",
+    "enabled": true,
+    "tags": [
+      "leafy"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:00:00.000Z",
+    "updatedAt": "2026-04-12T21:00:00.000Z"
+  },
+  {
+    "id": "aloo-palak-potato-spinach",
+    "name": "Aloo Palak (potato spinach)",
+    "categoryId": "veggie",
+    "enabled": true,
+    "tags": [
+      "potato",
+      "leafy",
+      "spinach"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:00:00.000Z",
+    "updatedAt": "2026-04-12T21:00:00.000Z"
+  },
+  {
+    "id": "kobi-cabbage",
+    "name": "Kobi (cabbage)",
+    "categoryId": "veggie",
+    "enabled": true,
+    "tags": [
+      "cabbage"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:00:00.000Z",
+    "updatedAt": "2026-04-12T21:00:00.000Z"
+  },
+  {
+    "id": "batata-bhaji-potato",
+    "name": "Batata Bhaji (potato)",
+    "categoryId": "veggie",
+    "enabled": true,
+    "tags": [
+      "potato"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:00:00.000Z",
+    "updatedAt": "2026-04-12T21:00:00.000Z"
+  },
+  {
+    "id": "aloo-mutter",
+    "name": "Aloo Mutter",
+    "categoryId": "veggie",
+    "enabled": true,
+    "tags": [
+      "potato",
+      "peas"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:00:00.000Z",
+    "updatedAt": "2026-04-12T21:00:00.000Z"
+  },
+  {
+    "id": "mutter-usal-peas",
+    "name": "Mutter Usal (peas)",
+    "categoryId": "veggie",
+    "enabled": true,
+    "tags": [
+      "peas",
+      "usal"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:00:00.000Z",
+    "updatedAt": "2026-04-12T21:00:00.000Z"
+  },
+  {
+    "id": "tondli-ivy-gourd",
+    "name": "Tondli (ivy gourd)",
+    "categoryId": "veggie",
+    "enabled": true,
+    "tags": [
+      "ivy gourd"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:00:00.000Z",
+    "updatedAt": "2026-04-12T21:00:00.000Z"
+  },
+  {
+    "id": "farasbee-potato-french-beans-potato",
+    "name": "Farasbee + Potato (french beans + potato)",
+    "categoryId": "veggie",
+    "enabled": true,
+    "tags": [
+      "french beans",
+      "potato"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:00:00.000Z",
+    "updatedAt": "2026-04-12T21:00:00.000Z"
+  },
+  {
+    "id": "palak-paneer",
+    "name": "Palak Paneer",
+    "categoryId": "veggie",
+    "enabled": true,
+    "tags": [
+      "protein-forward",
+      "paneer",
+      "leafy",
+      "spinach"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "Paneer-heavy veggie.",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:05:00.000Z",
+    "updatedAt": "2026-04-12T21:05:00.000Z"
+  },
+  {
+    "id": "shahi",
+    "name": "Shahi",
+    "categoryId": "veggie",
+    "enabled": true,
+    "tags": [
+      "protein-forward",
+      "paneer",
+      "rich"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "Paneer-heavy veggie.",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:05:00.000Z",
+    "updatedAt": "2026-04-12T21:05:00.000Z"
+  },
+  {
+    "id": "two-tone-paneer",
+    "name": "Two Tone Paneer",
+    "categoryId": "veggie",
+    "enabled": true,
+    "tags": [
+      "protein-forward",
+      "paneer"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "Paneer-heavy veggie.",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:05:00.000Z",
+    "updatedAt": "2026-04-12T21:05:00.000Z"
+  },
+  {
+    "id": "tawa-paneer",
+    "name": "Tawa Paneer",
+    "categoryId": "veggie",
+    "enabled": true,
+    "tags": [
+      "protein-forward",
+      "paneer",
+      "tawa"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "Paneer-heavy veggie.",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:05:00.000Z",
+    "updatedAt": "2026-04-12T21:05:00.000Z"
+  },
+  {
+    "id": "anda-ghotala",
+    "name": "Anda Ghotala",
+    "categoryId": "veggie",
+    "enabled": true,
+    "tags": [
+      "protein-forward",
+      "egg"
+    ],
+    "effort": "high",
+    "cooldownWeeks": 1,
+    "notes": "Egg-heavy veggie.",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:05:00.000Z",
+    "updatedAt": "2026-04-12T21:05:00.000Z"
+  },
+  {
+    "id": "anda-tawa-curry",
+    "name": "Anda Tawa Curry",
+    "categoryId": "veggie",
+    "enabled": true,
+    "tags": [
+      "protein-forward",
+      "egg",
+      "tawa",
+      "curry"
+    ],
+    "effort": "high",
+    "cooldownWeeks": 1,
+    "notes": "Egg-heavy veggie.",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:05:00.000Z",
+    "updatedAt": "2026-04-12T21:05:00.000Z"
+  },
+  {
+    "id": "anda-pepper-fry",
+    "name": "Anda Pepper Fry",
+    "categoryId": "veggie",
+    "enabled": true,
+    "tags": [
+      "protein-forward",
+      "egg",
+      "pepper fry"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "Egg-heavy veggie.",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:05:00.000Z",
+    "updatedAt": "2026-04-12T21:05:00.000Z"
+  },
+  {
+    "id": "matki",
+    "name": "Matki",
+    "categoryId": "pulse",
+    "enabled": true,
+    "tags": [
+      "pulse",
+      "sprouts"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:10:00.000Z",
+    "updatedAt": "2026-04-12T21:10:00.000Z"
+  },
+  {
+    "id": "chawli",
+    "name": "Chawli",
+    "categoryId": "pulse",
+    "enabled": true,
+    "tags": [
+      "pulse",
+      "beans"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:10:00.000Z",
+    "updatedAt": "2026-04-12T21:10:00.000Z"
+  },
+  {
+    "id": "chole",
+    "name": "Chole",
+    "categoryId": "pulse",
+    "enabled": true,
+    "tags": [
+      "pulse",
+      "chickpeas"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:10:00.000Z",
+    "updatedAt": "2026-04-12T21:10:00.000Z"
+  },
+  {
+    "id": "masoor",
+    "name": "Masoor",
+    "categoryId": "pulse",
+    "enabled": true,
+    "tags": [
+      "pulse",
+      "lentils"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:10:00.000Z",
+    "updatedAt": "2026-04-12T21:10:00.000Z"
+  },
+  {
+    "id": "tawa-pulao",
+    "name": "Tawa Pulao",
+    "categoryId": "rice",
+    "enabled": true,
+    "tags": [
+      "rice",
+      "kunal",
+      "tawa"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "Kunal recipe.",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:15:00.000Z",
+    "updatedAt": "2026-04-12T21:15:00.000Z"
+  },
+  {
+    "id": "fried-rice-manchu",
+    "name": "Fried Rice + Manchu",
+    "categoryId": "rice",
+    "enabled": true,
+    "tags": [
+      "rice",
+      "kunal",
+      "indo-chinese"
+    ],
+    "effort": "high",
+    "cooldownWeeks": 1,
+    "notes": "Kunal recipe.",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:15:00.000Z",
+    "updatedAt": "2026-04-12T21:15:00.000Z"
+  },
+  {
+    "id": "dal-rice",
+    "name": "Dal + Rice",
+    "categoryId": "rice",
+    "enabled": true,
+    "tags": [
+      "rice",
+      "dal",
+      "kunal",
+      "shweta"
+    ],
+    "effort": "low",
+    "cooldownWeeks": 1,
+    "notes": "Both Kunal and Shweta.",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:15:00.000Z",
+    "updatedAt": "2026-04-12T21:15:00.000Z"
+  },
+  {
+    "id": "dal-khichdi",
+    "name": "Dal Khichdi",
+    "categoryId": "rice",
+    "enabled": true,
+    "tags": [
+      "rice",
+      "dal",
+      "khichdi",
+      "kunal",
+      "shweta"
+    ],
+    "effort": "low",
+    "cooldownWeeks": 1,
+    "notes": "Both Kunal and Shweta.",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:15:00.000Z",
+    "updatedAt": "2026-04-12T21:15:00.000Z"
+  },
+  {
+    "id": "dal-dosa",
+    "name": "Dal Dosa",
+    "categoryId": "fun-item",
+    "enabled": true,
+    "tags": [
+      "fun",
+      "kunal",
+      "dosa",
+      "dal"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "Kunal recipe.",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:20:00.000Z",
+    "updatedAt": "2026-04-12T21:20:00.000Z"
+  },
+  {
+    "id": "sambhar-rice",
+    "name": "Sambhar rice",
+    "categoryId": "fun-item",
+    "enabled": true,
+    "tags": [
+      "fun",
+      "kunal",
+      "rice",
+      "south indian"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "Kunal recipe.",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:20:00.000Z",
+    "updatedAt": "2026-04-12T21:20:00.000Z"
+  },
+  {
+    "id": "rasam-rice",
+    "name": "Rasam rice",
+    "categoryId": "fun-item",
+    "enabled": true,
+    "tags": [
+      "fun",
+      "kunal",
+      "rice",
+      "south indian"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "Kunal recipe.",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:20:00.000Z",
+    "updatedAt": "2026-04-12T21:20:00.000Z"
+  },
+  {
+    "id": "idli-dosa",
+    "name": "Idli Dosa",
+    "categoryId": "fun-item",
+    "enabled": true,
+    "tags": [
+      "fun",
+      "kunal",
+      "idli",
+      "dosa",
+      "south indian"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "Kunal recipe.",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:20:00.000Z",
+    "updatedAt": "2026-04-12T21:20:00.000Z"
+  },
+  {
+    "id": "pav-bhaji",
+    "name": "Pav Bhaji",
+    "categoryId": "fun-item",
+    "enabled": true,
+    "tags": [
+      "fun",
+      "kunal",
+      "street food"
+    ],
+    "effort": "high",
+    "cooldownWeeks": 1,
+    "notes": "Kunal recipe.",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:20:00.000Z",
+    "updatedAt": "2026-04-12T21:20:00.000Z"
+  },
+  {
+    "id": "pasta",
+    "name": "Pasta",
+    "categoryId": "fun-item",
+    "enabled": true,
+    "tags": [
+      "fun",
+      "kunal",
+      "shweta",
+      "pasta"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "Both Kunal and Shweta.",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:20:00.000Z",
+    "updatedAt": "2026-04-12T21:20:00.000Z"
+  },
+  {
+    "id": "bombay-sandwich",
+    "name": "Bombay Sandwich",
+    "categoryId": "fun-item",
+    "enabled": true,
+    "tags": [
+      "fun",
+      "kunal",
+      "shweta",
+      "sandwich",
+      "street food"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "Both Kunal and Shweta.",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:20:00.000Z",
+    "updatedAt": "2026-04-12T21:20:00.000Z"
+  },
+  {
+    "id": "paneer-sandwich",
+    "name": "Paneer sandwich",
+    "categoryId": "fun-item",
+    "enabled": true,
+    "tags": [
+      "fun",
+      "kunal",
+      "paneer",
+      "sandwich",
+      "protein-forward"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "Kunal recipe.",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:20:00.000Z",
+    "updatedAt": "2026-04-12T21:20:00.000Z"
+  },
+  {
+    "id": "tacos",
+    "name": "Tacos",
+    "categoryId": "fun-item",
+    "enabled": true,
+    "tags": [
+      "fun",
+      "shweta",
+      "tacos"
+    ],
+    "effort": "medium",
+    "cooldownWeeks": 1,
+    "notes": "Shweta recipe.",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:20:00.000Z",
+    "updatedAt": "2026-04-12T21:20:00.000Z"
+  },
+  {
+    "id": "frankie",
+    "name": "Frankie",
+    "categoryId": "fun-item",
+    "enabled": true,
+    "tags": [
+      "fun",
+      "shweta",
+      "street food",
+      "wrap"
+    ],
+    "effort": "high",
+    "cooldownWeeks": 1,
+    "notes": "Shweta recipe.",
+    "ingredients": [],
+    "createdAt": "2026-04-12T21:20:00.000Z",
+    "updatedAt": "2026-04-12T21:20:00.000Z"
+  }
+]

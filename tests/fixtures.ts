@@ -37,6 +37,7 @@ export function savedPlan(weekStart: string, itemIdsByDate: Record<string, strin
       locked: false,
       selections: Object.fromEntries(itemIds.map((itemId, index) => [`category-${index}`, itemId]))
     })),
+    cookedBatches: [],
     createdAt: "2026-04-01T00:00:00.000Z",
     updatedAt: "2026-04-01T00:00:00.000Z"
   };

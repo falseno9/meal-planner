@@ -73,6 +73,7 @@ export function generatePlan(input: GeneratePlanInput, context: PlannerContext):
     weekStart: input.weekStart,
     eatingOutCount: input.eatingOutCount,
     days,
+    cookedBatches: input.existingPlan?.cookedBatches ?? [],
     createdAt: input.existingPlan?.createdAt ?? now,
     updatedAt: now
   };
@@ -204,7 +205,9 @@ function getWeeksSinceUse(itemId: string, weekStart: string, priorPlans: PlanSto
   for (const plan of Object.values(priorPlans)) {
     if (plan.weekStart >= weekStart) continue;
 
-    const used = plan.days.some((day) => Object.values(day.selections).includes(itemId));
+    const used =
+      plan.days.some((day) => Object.values(day.selections).includes(itemId)) ||
+      (plan.cookedBatches ?? []).some((batch) => batch.itemId === itemId);
     if (!used) continue;
 
     const weeks = Math.floor(daysBetween(plan.weekStart, weekStart) / 7);

@@ -37,10 +37,19 @@ export interface DayPlan {
   selections: Record<string, string | undefined>;
 }
 
+export interface CookedBatch {
+  id: string;
+  itemId: string;
+  cookedOn: string;
+  eatenOnDates: string[];
+  notes?: string;
+}
+
 export interface Plan {
   weekStart: string;
   eatingOutCount: 1 | 2;
   days: DayPlan[];
+  cookedBatches: CookedBatch[];
   createdAt: string;
   updatedAt: string;
 }

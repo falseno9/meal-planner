@@ -76,6 +76,36 @@ describe("generatePlan", () => {
     expect(firstHomeDay?.selections.veggie).toBe("fresh-veg");
   });
 
+  it("treats prior cooked batches as recent use", () => {
+    const items = [
+      meal("recent-veg", "veggie"),
+      meal("fresh-veg", "veggie"),
+      meal("dal", "pulse"),
+      meal("rice", "rice")
+    ];
+    const priorPlan = {
+      ...savedPlanWithSelections("2026-04-06", {
+        "2026-04-06": {}
+      }),
+      cookedBatches: [
+        {
+          id: "batch-1",
+          itemId: "recent-veg",
+          cookedOn: "2026-04-06",
+          eatenOnDates: ["2026-04-06", "2026-04-07"]
+        }
+      ]
+    };
+
+    const plan = generatePlan(
+      { weekStart: "2026-04-13", eatingOutCount: 1 },
+      { categories: fixtureCategories, items, priorPlans: { "2026-04-06": priorPlan } }
+    );
+    const firstHomeDay = plan.days.find((day) => !day.isEatingOut);
+
+    expect(firstHomeDay?.selections.veggie).toBe("fresh-veg");
+  });
+
   it("keeps locked plan entries unchanged during regeneration", () => {
     const items = buildItemSet();
     const lockedDay: DayPlan = {
@@ -93,6 +123,7 @@ describe("generatePlan", () => {
           (date) => ({ date, isEatingOut: false, locked: false, selections: {} })
         )
       ],
+      cookedBatches: [],
       createdAt: "2026-04-01T00:00:00.000Z",
       updatedAt: "2026-04-01T00:00:00.000Z"
     };
@@ -134,6 +165,7 @@ function savedPlanWithSelections(weekStart: string, selectionsByDate: Record<str
       locked: false,
       selections
     })),
+    cookedBatches: [],
     createdAt: "2026-04-01T00:00:00.000Z",
     updatedAt: "2026-04-01T00:00:00.000Z"
   };

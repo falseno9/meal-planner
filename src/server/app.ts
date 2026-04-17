@@ -2,7 +2,7 @@ import express from "express";
 import { randomUUID } from "node:crypto";
 import { buildGroceryList } from "../shared/groceries";
 import { generatePlan } from "../shared/planner";
-import type { Category, GeneratePlanInput, Ingredient, MealItem, Plan } from "../shared/types";
+import type { Category, CookedBatch, GeneratePlanInput, Ingredient, MealItem, Plan } from "../shared/types";
 import { JsonStore } from "./storage";
 
 export function createApp(store = new JsonStore()) {
@@ -217,8 +217,19 @@ function normalizePlan(value: Plan): Plan {
           selections: typeof day.selections === "object" && day.selections ? day.selections : {}
         }))
       : [],
+    cookedBatches: Array.isArray(value.cookedBatches) ? value.cookedBatches.map(normalizeCookedBatch) : [],
     createdAt: value.createdAt ?? new Date().toISOString(),
     updatedAt: value.updatedAt ?? new Date().toISOString()
+  };
+}
+
+function normalizeCookedBatch(value: Partial<CookedBatch>): CookedBatch {
+  return {
+    id: String(value.id || randomUUID()),
+    itemId: String(value.itemId || ""),
+    cookedOn: String(value.cookedOn || ""),
+    eatenOnDates: Array.isArray(value.eatenOnDates) ? value.eatenOnDates.map(String).filter(Boolean) : [],
+    notes: value.notes ? String(value.notes) : ""
   };
 }
 

@@ -48,6 +48,45 @@ describe("buildGroceryList", () => {
 
     expect(groceries).toEqual([]);
   });
+
+  it("counts a cooked batch once even when eaten across multiple dinners", () => {
+    const items = [
+      meal("dal", "pulse", {
+        name: "Dal",
+        ingredients: [{ id: "lentils", name: "Lentils", quantity: 1, unit: "cup" }]
+      })
+    ];
+    const plan = {
+      ...planWithSelections(["dal"]),
+      days: [
+        {
+          date: "2026-04-13",
+          isEatingOut: false,
+          locked: false,
+          selections: { pulse: "dal" }
+        },
+        {
+          date: "2026-04-14",
+          isEatingOut: false,
+          locked: false,
+          selections: { pulse: "dal" }
+        }
+      ],
+      cookedBatches: [
+        {
+          id: "batch-1",
+          itemId: "dal",
+          cookedOn: "2026-04-13",
+          eatenOnDates: ["2026-04-13", "2026-04-14"]
+        }
+      ]
+    };
+
+    const groceries = buildGroceryList(plan, items);
+
+    expect(groceries).toHaveLength(1);
+    expect(groceries[0]).toMatchObject({ name: "Lentils", quantity: 1, unit: "cup" });
+  });
 });
 
 function planWithSelections(itemIds: string[]): Plan {
@@ -62,6 +101,7 @@ function planWithSelections(itemIds: string[]): Plan {
         selections: Object.fromEntries(itemIds.map((itemId, index) => [`slot-${index}`, itemId]))
       }
     ],
+    cookedBatches: [],
     createdAt: "2026-04-01T00:00:00.000Z",
     updatedAt: "2026-04-01T00:00:00.000Z"
   };
